@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="flex ">
+            <div class="ml-10 mt-10 ">
+                <img class="h-3/4" src="image/mac.png" alt="">
+            </div>
+            <div class="text-center mt-10 mr-10 ">
+                <h1 class="text-4xl text-blue-400">Customize your Blue 24-inch iMac</h1>
+                <h2 class="text-2xl"> With, <span class="text-4xl text-green-300">Apple M1 chip</span></h2>
+                <div>
+                    <p class="">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard US English</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="text-center">
+                <div class="mt-2">
+                    <p class="font-semibold text-2xl">Memory</p>
+                    <button id="memory8-btn" class="border bg-green-100 p-4 rounded">8GB unified memory</button>
+                    <button id="memory16-btn" class="border bg-green-100 p-4 rounded">16GB unified memory</button>
+                </div>
+                <div class="mt-10">
+                    <p class="font-semibold text-2xl">Storage</p>
+                    <button id="storage256-btn" class="border bg-blue-100 p-4 rounded">256GB SSD storage</button>
+                    <button id="storage512-btn" class="border bg-blue-100 p-4 rounded">512GB SSD storage</button>
+                    <button id="storage1-btn" class="border bg-blue-100 p-4 rounded">1TB SSD storage</button>
+                </div>
+                <div class="mt-10">
+                    <p class="font-semibold text-2xl">Choose your delivery option</p>
+                    <button id="delivery25-btn" class="border bg-purple-100 p-4 rounded">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button id="delivery21-btn" class="border bg-purple-100 p-4 rounded">Friday, Aug 21 Delivery charge $20</button>
+                </div>
+                <div class="grid  grid-cols-2 gap-4 mt-10 ">
+                    <div>
+                        <h5 class="font-normal text-2xl">Best Price </h5>
+                        <h5 class="font-normal text-2xl">Extra Memory Cost</h5>
+                        <h5 class="font-normal text-2xl">Extra Storage Cost</h5>
+                        <h5 class="font-normal text-2xl">Delivery charge</h5>
+                        <hr>
+                        <h5 class="font-semibold text-3xl">Total Price</h5>
+                    </div>    
+                        
+                    <div>
+                        <h5 class="font-normal text-2xl">$<span id="sub-total">1299</span></h5>
+                        <h5 class="font-normal text-2xl">$<span id="tax-amount">0</span></h5>
+                        <h5 class="font-normal text-2xl">$<span id="total-price">0</span></h5>
+                        <h5 class="font-semibold text-2xl">$<span id="total-price">0</span></h5>
+                        <hr>
+                        <h5 class="font-semibold text-3xl">$<span id="total-price">1299</span></h5>
+                    </div>
+                </div>
+
+                <div class="mt-10">
+                    <h5 class="font-semibold text-3xl text-green-500 ">Add Pomo code</h5>
+                    <input id="promoInput-code" type="text" placeholder="Enter Here Promo Code">
+                    <button id="promo-btn" class="bg-red-400 p-4 rounded">Apply</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-10 text-center text-5xl font-semibold">
+            <hr>
+            <h1>Total: $<span>1299</span></h1>
+        </div>
+    </main>
+    <script src="js/shopping.js"></script>
+</body>
+</html>
